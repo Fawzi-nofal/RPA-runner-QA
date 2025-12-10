@@ -1,0 +1,45 @@
+[
+  {
+    "name": "login-basic",
+    "steps": [
+      {
+        "type": "goto",
+        "url": "https://www.saucedemo.com/"
+      },
+      {
+        "type": "wait_for_selector",
+        "selector": "input#user-name",
+        "value": "visible",
+        "retry": 1,
+        "retry_delay_ms": 400
+      },
+      {
+        "type": "fill",
+        "selector": "input#user-name",
+        "value": "standard_user",
+        "retry": 1,
+        "retry_delay_ms": 400
+      },
+      {
+        "type": "fill",
+        "selector": "input#password",
+        "value": "secret_sauce",
+        "retry": 1,
+        "retry_delay_ms": 400
+      },
+      {
+        "type": "click",
+        "selector": "input#login-button",
+        "retry": 1,
+        "retry_delay_ms": 400
+      },
+      {
+        "type": "wait_for_selector",
+        "selector": "text=Products",
+        "value": "visible",
+        "retry": 1,
+        "retry_delay_ms": 400
+      }
+    ]
+  }
+]

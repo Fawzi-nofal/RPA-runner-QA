@@ -1,0 +1,15 @@
+Run: AI LLM Suite
+Base URL: https://www.saucedemo.com/
+Browser: chromium | Headful: False
+Status: failed
+Error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "", waiting until "domcontentloaded"
+
+Duration: 0.61s
+
+Steps:
+  [1] goto  (0.01s)  -> failed  sel=None val=None
+       error: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "", waiting until "domcontentloaded"
